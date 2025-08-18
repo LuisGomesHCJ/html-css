@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            margin: 0px;
+        }
+
+        header {
+            padding: 20px;
+            background-color: rgb(172, 224, 224);
+            
+        }
+        img {
+            margin: auto;
+            height: 200px;
+
+        }
+        
+        nav {
+            text-align: center;
+            background-color: #c8c8f8;
+            padding: 15px;
+            
+        }
+        nav > a {
+            margin: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 10px;
+            transition: background-color 0.2s;
+        }
+        nav > a:hover {
+            border-radius: 30px;
+            background-color: aqua;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            
+        }
+
+        
+        article {
+            background-color: #c8c8f8;
+            padding: 10px 15px;
+        }
+        
+        article > aside {
+            background-color: #9f9fc5 ;
+        }
+
+        footer {
+            text-align: center;
+            padding: 5px;
+            background-color: rgb(17, 17, 17);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SITE</h1>
+        <nav>
+            <a href="#">Imagens</a>
+            <a href="#">Contatos</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="noticias">
+            <h1>NOTÍCIAS</h1>
+            <article>
+                <h2>Notícias sobre o Mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eius suscipit id doloremque eum quis aperiam sit facilis autem maxime, eaque alias officia labore assumenda illum quod accusamus tempora quisquam.</p>
+                <aside>Escrito por Lorem José</aside>
+            </article>
+        </section>
+        <section id="assuntos">
+
+        </section>
+    </main>
+    <footer>
+        © Desenvolvdo por iniciante.
+    </footer>
+</body>
+</html>

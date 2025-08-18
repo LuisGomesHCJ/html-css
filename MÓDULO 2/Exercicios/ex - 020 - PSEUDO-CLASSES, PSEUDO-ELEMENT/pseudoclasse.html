@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classees</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            background-color: rgb(156, 156, 156);
+            display: inline-block; /* Faz com que o elemento se comporte como um bloco (permitindo definir largura, altura, margens, etc.), mas fique alinhado na mesma linha que outros elementos, como se fosse um elemento inline. VOCÊ PERSONALIZA A ALTURA E LARGURA COM O "height" e "widht" */
+            border: 1px solid rgb(255, 0, 242); /* ADICIONA BORDA AO display: inline-block; */
+            height: 200px; /* ALTURA DO dispay:inline-block */
+            width: 200px; /* LARGURA DO dispay:inline-block*/
+            text-align: center; /* CENTRALIZA O TEXTO*/
+        }
+        
+        div#quadro1:hover {  /*Pseudo-classe PARA O DIV no quadro 1, O ":hover" APLICA ESTILO AO ENTRAR EM CONTATO COM O MOUSE*/
+            background-color: red;
+        }
+
+        div#quadro2:hover {  /*Pseudo-classe PARA O DIV no quadro 2, O ":hover" APLICA ESTILO AO ENTRAR EM CONTATO COM O MOUSE*/
+            background-color: blue;
+        }
+
+        div#quadro3:hover {  /*Pseudo-classe PARA O DIV no quadro 3, O ":hover" APLICA ESTILO AO ENTRAR EM CONTATO COM O MOUSE*/
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="quadro1"> 01 </div>
+    <div id="quadro2"> 02 </div>
+    <div id="quadro3"> 03 </div>
+    <a href="exemplohover.html">
+        <p>Próxima página</p>
+    </a>
+</body>
+</html>

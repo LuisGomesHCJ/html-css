@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+
+    <style>
+
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {     /* TUDO QUE ESTIVER NA <div></div> VAI FICAR VERMELHO AO PASSAR O MOUSE*/
+            color: red;
+        }
+
+        div > p {       /*INDICA QUE O <p></p> QUE ESTÁ DENTRO DA <div></div>, VAI FICAR INVISÍVEL "display: none;" */
+            display: none; /* desaparecer*/
+        }
+
+        div:hover > p { /* INDICA O QUE VAI ACONTECER COM O <p></p> AO MOVER O MOUSE NA <div></div> ONDE O <p> SE ENCONTRA*/
+            display: block; /* mostrar */
+            color: white;
+            background-color: black;
+            width: min-content; /*deixa o background-color de acordo com o texto*/
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Achou!!!</p>
+    </div>
+
+    <a href="pseudoclasse.html">
+        <p>Página inicial</p>
+    </a>
+
+</body>
+</html>
