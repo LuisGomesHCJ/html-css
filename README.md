@@ -1,2 +1,6 @@
 # html-css
 Curso em Video de HTML5 e CSS3
+
+Exercicios
+
+<a href="MÓDULO 1/Exercicios/ex - 005 - praticar/">Exercicio 005 (prática)</a>
