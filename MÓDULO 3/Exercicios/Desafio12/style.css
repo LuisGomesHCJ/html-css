@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'BowlbyOneSC' ;
+    src: url('fontes/BowlbyOneSC-Regular.ttf') format(truetype);
+}
+@font-face {
+    font-family: 'comicRelief';
+    src: url('fontes/ComicRelief-Bold.ttf') format(truetype);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 31px;
+}
+header h1 {
+    font-family:'BowlbyOneSC', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 8vw;
+}
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+header a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+.cordelnoimage {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 3.5vw;
+    font-family:'comicRelief', Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    padding: 50px;
+}
+.cordelimage {
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 3.5vw;
+    font-family:'comicRelief', Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    padding: 50px;
+}
+
+
+
+div#quad2 {
+    box-shadow: inset 9px 12px 20px 0px #0000008f;
+    background-color: gray;
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    padding: 35px;
+}
+div#quad2 p {
+    display: inline-block;
+    background-color: rgba(31, 30, 30, 0.61);
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+
+div#quad4 {
+    box-shadow: inset 9px 12px 20px 0px #0000008f;
+    background-color: gray;
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    padding: 35px;
+}
+div#quad4 p {
+    display: inline-block;
+    background-color: rgba(31, 30, 30, 0.61);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+footer {
+    padding: 7px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
