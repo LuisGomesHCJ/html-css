@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            background-color: aqua;
+            padding: 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: gray;
+            color:white;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td.nomes {
+            text-align: left;
+        }
+        td.number {
+            text-align: right;
+        }
+
+        /* Linhas zebradas */
+
+        tbody tr:nth-child(2n) {
+            background-color: lightblue;
+
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População dos Estados do Brasil</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+                <th>% da <abbr title="População">Pop.</abbr><br> Total</th>
+                <th>País</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nomes">São Paulo</td>
+                <td class="number">45 919 049</td>
+                <td>21,9%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Minas Gerais</td>
+                <td class="number">21 168 791</td>
+                <td>10,1%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Rio de Janeiro</td>
+                <td class="number">17 264 943</td>
+                <td>8,2%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Bahia</td>
+                <td class="number">14 873 064</td>
+                <td>7,1%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Paraná</td>
+                <td class="number">11 433 957</td>
+                <td>5,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Rio Grande do Sul</td>
+                <td class="number">11 377 239</td>
+                <td>5,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Pernambuco</td>
+                <td class="number">9 557 071</td>
+                <td>4,5%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Ceará</td>
+                <td class="number">9 132 078</td>
+                <td>4,3%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Pará</td>
+                <td class="number">8 602 865</td>
+                <td>4,1%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Santa Catarina</td>
+                <td class="number">7 164 788</td>
+                <td>3,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Maranhão</td>
+                <td class="number">7 075 181</td>
+                <td>3,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Goiás</td>
+                <td class="number">7 018 354</td>
+                <td>3,3%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Amazonas</td>
+                <td class="number">4 144 597</td>
+                <td>2,0%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Espirito Santo</td>
+                <td class="number">4 018 650</td>
+                <td>1,9%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Paraíba</td>
+                <td class="number">4 018 127</td>
+                <td>1,9%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Rio Grande do Norte</td>
+                <td class="number">3 506 853</td>
+                <td>1,9%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Mato Grosso</td>
+                <td class="number">3 484 466</td>
+                <td>1,7%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Alagoas</td>
+                <td class="number">3 337 357</td>
+                <td>1,6%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Piauí</td>
+                <td class="number">3 273 227</td>
+                <td>1,6%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Distrito Federal</td>
+                <td class="number">3 015 268</td>
+                <td>1,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Mato Grosso do Sul</td>
+                <td class="number">2 778 986</td>
+                <td>1,3%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Sergipe</td>
+                <td class="number">2 298 696</td>
+                <td>1,1%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Rondônia</td>
+                <td class="number">1 777 225</td>
+                <td>0,8%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Tocantins</td>
+                <td class="number">1 572 866</td>
+                <td>0,7%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Acre</td>
+                <td class="number">881 935</td>
+                <td>0,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Amapá</td>
+                <td class="number">845 731</td>
+                <td>0,4%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td class="nomes">Roraima</td>
+                <td class="number">605 761</td>
+                <td>0,3%</td>
+                <td>Brasil</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de População</th>
+                <td class="number"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Lorem ipsum dolor </h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis earum illum eum saepe accusantium quae sunt nobis amet! In nisi quisquam asperiores maiores, possimus nemo id beatae ab accusantium a? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti animi facere voluptate cum perferendis iusto ex fugiat alias, ea minus quasi accusantium quisquam reiciendis ipsum. Pariatur maxime assumenda aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laboriosam nobis ipsa reiciendis, eius, ipsum neque error amet quidem ipsam cupiditate ea architecto recusandae repellendus nesciunt nisi eligendi eveniet vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis est tempore deleniti qui asperiores facere aliquid adipisci iusto quidem recusandae accusantium et incidunt explicabo temporibus modi quae, quasi ipsa mollitia.</p>
+
+</body>
+</html>
