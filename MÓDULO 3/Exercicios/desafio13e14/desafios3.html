@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+            width: 600px;
+        }
+
+        thead, .media {
+            background-color: rgb(73, 73, 73);
+            font-weight: bold;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Tabelas</h1>
+    </header>
+    <nav>
+        <a href="desafios.html">Inicio</a>
+        <a href="desafios2.html"rel="interno">Tabela Anterior</a>
+    </nav>
+
+    <div class="tabela">
+        <table>
+            <caption>Desafio 15</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">ÁREA</th>
+                    <th rowspan="2" scope="col">DISCIPLINAS</th>
+                    <th colspan="2" scope="colgroup">NOTAS</th>
+                    <th rowspan="2" scope="col">MÉDIA</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <body>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">EXATAS</th>
+                    <td>Matemática</td>
+                    <td>7,5</td>
+                    <td>6,0</td>
+                    <td>6,75</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td>8,0</td>
+                    <td>7,0</td>
+                    <td>7,5</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td>8,0</td>
+                    <td>4,0</td>
+                    <td>6,0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>6,0</td>
+                    <td>6,0</td>
+                    <td>6,0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" class="media" scope="row">Média total de Exatas</th>
+                    <td class="media">6,56</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">HUMANAS</th>
+                    <td>História</td>
+                    <td>4,0</td>
+                    <td>9,0</td>
+                    <td>6,5</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>10,0</td>
+                    <td>7,5</td>
+                    <td>8,75</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row" class="media">Média total de Humanas</th>
+                    <td class="media">7,6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
