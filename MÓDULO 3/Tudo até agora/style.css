@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pixels';
+    src: url('Fonts/PressStart2P-Regular.ttf') format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'indieflower';
+    src: url('Fonts/IndieFlower-Regular.ttf') format(truetype);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #2298E0;
+    --cor2: #407CA1;
+    --cor3: #3F5461;
+    --cor4: #E09122;
+    --cor5: #8B6D43;
+    --cor6: #36322C;
+
+    --font1: 'pixels';
+    --font2: 'indieflower';
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+a {
+    text-decoration: none;
+}
+abbr {
+    text-decoration: none;
+}
+
+header {
+    padding-top: 40px;
+    background-color:var(--cor1);
+    padding-bottom: 30px;
+}
+header > h1 {
+    font-family: var(--font1), Helvetica, sans-serif;
+    padding: 15px;
+    font-size: 2.6em;
+    text-align: center;
+    text-shadow: 5px 6px 12px #0000004d;
+
+}
+nav {
+    background-image: linear-gradient(to top, var(--cor2), var(--cor1));
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2em;
+}
+nav a {
+    color: black;
+    padding: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    
+}
+nav a:hover {
+    background-color: var(--cor5);
+    color: white;
+    transition: .2s;
+}
+
+section {
+    background-color: #ccebff;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+}
+
+section h1 {
+    font-size: 2em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+section h2 {
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+ article a {
+    color: black;
+ }
+ article a:hover {
+    color: var(--cor1);
+    text-decoration: dashed;
+ }
+
+ ul {
+    padding: 15px 40px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+thead{
+    background-color: var(--cor2);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 7px;
+}
+
+
+
+#jogostab {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    text-decoration: dashed;
+    color: var(--cor1);
+}
