@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site </h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nobis omnis nostrum tenetur corrupti ex, quidem ipsum dolore vitae accusamus illum rerum molestias cumque vel enim, ab assumenda repellat. Iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, labore id. Ipsa placeat nam neque odio autem consequuntur necessitatibus ratione molestias distinctio nesciunt omnis dolore unde eius molestiae, dicta numquam.</p>
+
+    <iframe src="paginas-extras/pag04.html" sandbox="allow-forms allow-same-origin allow-scripts" referrerpolicy="no-referrer">
+        <p>Não foi possível carregar, acesse o site em outro navegador.</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nobis omnis nostrum tenetur corrupti ex, quidem ipsum dolore vitae accusamus illum rerum molestias cumque vel enim, ab assumenda repellat. Iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, labore id. Ipsa placeat nam neque odio autem consequuntur necessitatibus ratione molestias distinctio nesciunt omnis dolore unde eius molestiae, dicta numquam.</p>
+
+
+    <!-- 
+                        sandbox="sandbox" 
+    1. Desabilita scripts (<script> não funcionam por padrão).
+    2. Impede que o conteúdo abra novas janelas/janelas pop-up.
+    3. Bloqueia formulários e o envio de dados.
+    4. Impede o acesso ao armazenamento local e cookies (dependendo do navegador).
+
+    Por que usar: Evita que o conteúdo do iframe (principalmente se for de terceiros) execute código perigoso ou interfira no seu site.
+    -->
+
+    
+
+
+    <!--       |-- [ sandbox ]  →  Tudo bloqueado
+               | 
+               |-- [ allow-scripts ] → libera JS, mas sem formulários, popups ou acesso ao topo
+               |
+               |-- [ allow-forms ] → permite envio de formulários
+               |
+               |-- [ allow-popups ] → permite abrir novas janelas
+               |    
+               |-- [ allow-popups-to-escape-sandbox ] → popups abrem fora das restrições
+               |
+               |-- [ allow-same-origin ] → iframe é tratado como mesma origem (pode acessar cookies e DOM)
+               |
+               |-- [ allow-top-navigation ] → iframe pode mudar a página principal
+               |      
+               |-- [ allow-top-navigation-by-user-activation ] → só muda a página se houver clique
+               |
+               |-- [ allow-modals ] → permite alert(), prompt(), confirm()
+               |
+               |-- [ allow-downloads ] → autoriza downloads
+               |
+               |-- [ allow-storage-access-by-user-activation ] → acesso a cookies/localStorage com ação do usuário
+               |
+               |-- [ allow-presentation ] → permite usar APIs de apresentação remota
+               |
+               |-- [ allow-pointer-lock ] → captura do cursor com Pointer Lock API
+    -->
+
+    <!-- 
+                        referrerpolicy="no-referrer"
+            Controla o envio do cabeçalho HTTP Referer.
+            "no-referrer" → Não envia o cabeçalho Referer.
+
+                            Outros valores:
+
+                |-- "no-referrer-when-downgrade" (padrão) → Envia o Referer para HTTPS, mas não para HTTP.
+                |
+                |-- "origin" → Envia apenas a origem (protocolo + domínio).
+                |
+                |-- "strict-origin-when-cross-origin" → Envia a origem para sites diferentes, mas a URL completa para o mesmo site.
+                |
+                |-- "same-origin" → Envia o Referer apenas para o mesmo site.
+                |
+                |-- "unsafe-url" → Sempre envia a URL completa (menos seguro).
+                
+            Por que usar: Protege a privacidade do usuário, evitando que sites de terceiros vejam de onde ele veio.
+
+    -->
+
+</body>
+</html>
