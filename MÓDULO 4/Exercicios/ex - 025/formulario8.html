@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+     <form action="cadastro.php" method="post">
+        
+                    <!-- Adicionando Java Script para somar os números ( oninput pra frente já é JS ) -->
+        <p>
+            <label for="ivalor1">Valor 1:</label>
+            <input type="number" name="valor1" id="ivalor1" required min="0" max="100" 
+            oninput="isoma.innerHTML = Number(ivalor1.value) + Number(ivalor2.value)">
+            
+        </p>
+        <p>
+            <label for="ivalor2">Valor 2:</label>
+            <input type="number" name="valor2" id="ivalor2" required min="0" max="100" 
+            oninput="isoma.innerHTML = Number(ivalor1.value) + Number(ivalor2.value)">
+        </p>
+        
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">--</output>
+            
+        </p>
+        <p>
+            <input type="reset" value="Limpar dados">
+            <input type="submit" value="Enviar">
+        </p>
+
+        
+     </form>
+
+     
+</body>
+</html>
