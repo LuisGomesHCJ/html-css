@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras */
+
+* {
+    margin: 15px;
+    padding: 5px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    font-size: 0.7em;
+    font-weight: bold;
+    content: 'Este artigo foi impresso através do site www.exemplo.org.br';
+}
+
+
+
+
+
+
+
+
+footer {
+    display: none;
+}
