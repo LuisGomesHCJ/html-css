@@ -8,12 +8,15 @@
 menu {
     display: none;
 }
+#menu {
+    display: none;
+}
 
 article {
     max-width: 700px;
 }
 article::after {
-    content: "Artigo criado e desenvolvido por LOREM.";
+    content: "Artigo criado e desenvolvido por LOREM IPSUM.";
 }
 
 footer {

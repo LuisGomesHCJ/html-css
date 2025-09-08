@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/cell.css" media="all">
     <link rel="stylesheet" href="estilos/tblt.css" media="screen and (min-width: 758px) and (max-width: 992px)">
     <link rel="stylesheet" href="estilos/pc.css" media="screen and (min-width: 992px) and (max-width: 2000px)">
-    <link rel="stylesheet" href="print.css"media="print">
+    <link rel="stylesheet" href="estilos/print.css"media="print">
 
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="opcoes" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="lista">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
                 <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 5</a></li>
             </ul>
         </menu>
     </header>
@@ -27,6 +29,7 @@
     <main>
         <article>
             <h1>Testando Media Queries</h1>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptate consequuntur magni maiores quisquam aliquam voluptatibus earum odit nesciunt vero, expedita soluta, atque illum dignissimos quos iure eius nemo alias! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis facere, quibusdam voluptatum nulla reprehenderit, assumenda nemo id fugiat aut ipsa accusamus maxime totam eos labore maiores perferendis, perspiciatis consequatur laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aperiam nulla sit expedita voluptate iure consequatur nisi voluptatem. Ipsa est at nulla veniam et ducimus laborum assumenda consequuntur eius quia.</p>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, iste, natus obcaecati veniam ipsum molestiae nulla assumenda explicabo qui placeat odit, dicta doloribus mollitia? Dolorem ducimus exercitationem quod pariatur perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quae fugit ab, dolore quisquam placeat deserunt esse eius fugiat minus quis tenetur iusto eligendi voluptatibus iure consequuntur dolorem voluptatum. Quisquam!</p>
@@ -44,5 +47,15 @@
     <footer>
         <strong>Todos os direitos reservados.</strong>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if (lista.style.display == 'block'){
+                lista.style.display = 'none'
+            } else {
+                lista.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

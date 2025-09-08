@@ -1,9 +1,22 @@
 @charset "UTF-8";
 
-
 header h1 {
     font-size: 3em;
 }
+
+menu {
+    display: block;
+}
+
+menu li {
+    display: inline-block;
+    padding-left: 7px;
+}
+
+#opcoes { 
+    display: none;
+}
+
 article {
     max-width: 800px;
 }

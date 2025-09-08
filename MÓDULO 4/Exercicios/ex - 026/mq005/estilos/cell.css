@@ -15,18 +15,48 @@ header h1 {
     text-align: center;
     font-weight: bold;
     font-size: 2em;
-}
-menu ul{
-    list-style-type: none;
-   
-}
-menu li {
-    display: inline-block;
     padding: 10px;
 }
+menu {
+    padding-top: 20px;
+    display: none;
+}
+
+#opcoes {
+    display: block;
+    background-color: #0000002f;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+#opcoes:hover {
+    background-color: black;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+}
+
+menu ul{
+    list-style-type: none;
+}
+
+menu li {
+    text-align: center;
+    padding-bottom: 3px;
+}
 menu li a {
+    display: block;
+    background-color: #0000002f;
+    border-radius: 7px;
+    padding: 7px;
     text-decoration: none;
     color: white;
+}
+menu li a:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
 }
 
 
@@ -38,11 +68,11 @@ article {
 }
 article h1 {
     text-align: center;
-    padding: 30px;
+    padding-top: 20px;
 }
 article p {
     margin: 20px;
-    padding: 15px;
+    padding-bottom: 15px;
     line-height: 1.5em;
     text-indent: 30px;
 }
