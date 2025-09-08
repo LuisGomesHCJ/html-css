@@ -12,6 +12,9 @@ menu li {
     display: inline-block;  
     padding-left: 7px; 
 }
+menu ul {
+    text-align: center;
+}
 
 #opcoes { 
     display: none;
