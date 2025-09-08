@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    max-width: 700px;
+}
+article::after {
+    content: "Artigo criado e desenvolvido por LOREM.";
+}
+
+footer {
+    display: none;
+}

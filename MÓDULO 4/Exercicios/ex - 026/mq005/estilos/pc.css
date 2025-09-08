@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+header h1 {
+    font-size: 3em;
+}
+article {
+    max-width: 800px;
+}
+
+article h1 {
+    padding: 30px;
+}
