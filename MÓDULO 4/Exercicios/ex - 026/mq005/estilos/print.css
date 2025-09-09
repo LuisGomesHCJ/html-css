@@ -5,10 +5,8 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-menu {
-    display: none;
-}
-#menu {
+
+#lista, #opcoes {
     display: none;
 }
 
