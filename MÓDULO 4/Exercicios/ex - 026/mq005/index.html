@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="estilos/print.css"media="print">
 
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="opcoes" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -49,8 +49,16 @@
     </footer>
 
     <script>
-        function clickMenu() {
-            if (lista.style.display == 'block'){
+        function mudarTamanho(){            // Corrigir bug do menu desaparecer após aumentar a largura da janela 
+            if (window.innerWidth >=768) {
+                lista.style.display = 'block'
+            } else {
+                lista.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {             // criar um botão para mostrar o menu 
+            if (lista.style.display == 'block') {
                 lista.style.display = 'none'
             } else {
                 lista.style.display = 'block'

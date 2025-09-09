@@ -62,7 +62,7 @@ menu li a:hover {
 
 article {
     background-color: aliceblue;
-    max-width: 450px;
+    max-width: 90vw;
     margin: auto;
     text-align: justify;
 }
