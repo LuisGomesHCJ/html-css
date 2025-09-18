@@ -20,7 +20,7 @@ body {
 
 main {
     backdrop-filter: blur(15px); /* Aplica efeito desfocado */
-    height: 720px;
+    height: 600px;
     width: 400px;
     background-color: transparent;
     border: 2px solid #ffffff33;

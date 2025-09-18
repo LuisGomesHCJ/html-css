@@ -5,6 +5,7 @@
     main {
         width: 700px;
         height: 500px;
+        padding: 50px 100px;
     }
 
     form input[type=submit] {
@@ -25,7 +26,8 @@
 
 main {
         width: 800px;
-        height: 600px;
+        height: 500px;
+        padding: 50px 130px;
     }
     
     form input[type=submit] {
