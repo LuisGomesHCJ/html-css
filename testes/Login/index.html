@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+</head>
+<body>
+    <main>
+        <form action="cadastro.php" method="post">
+            <h1>ACESSE SUA CONTA</h1>
+            <div class="box">
+                <label for="iemail"></label>
+                <input type="email" name="email" id="iemail" placeholder="Seu E-mail">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+            <div class="box">
+                <label for="isenha"></label>
+                <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                <span class="material-symbols-outlined">lock</span>
+            </div>
+
+            <div class="lembrar-esqueci">
+                
+                <label for="icheck">
+                    <input type="checkbox" name="check" id="icheck">
+                    Lembrar senha
+                </label>
+
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <input type="submit" value="Entrar">
+            <div class="registrar">
+                <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
