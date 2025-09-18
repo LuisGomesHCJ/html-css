@@ -13,4 +13,6 @@ Exercicios
 
 <a href="MÓDULO 4/Exercicios/ex - 026/mq005/">Exercicio Media Query 05</a>
 
-<a href="testes/Login/index.html">Login 2.0</a>
+<a href="MÓDULO 4/Exercicios/projeto-login/index.html">Projeto Login Curso em Video</a>
+
+<a href="testes/Login/index.html">Login 2.0 aprendendo no Youtube</a>
