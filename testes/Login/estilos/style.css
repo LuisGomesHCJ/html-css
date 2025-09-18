@@ -21,14 +21,14 @@ body {
 main {
     backdrop-filter: blur(15px); /* Aplica efeito desfocado */
     height: 720px;
-    width: 420px;
+    width: 400px;
     background-color: transparent;
     border: 2px solid #ffffff33;
     border-radius: 10px;
-    color: rgba(255, 255, 255, 0.747);
+    color: #ffffff;
     padding: 50px 40px;
 
-    transition: width .2s, height .2s;
+    transition: width .2s, height .2s; /* Aplica fluidez ao mudar de largura e altura */
     
 }
 
@@ -38,7 +38,7 @@ main h1 {
 }
 
 form .box {
-    position: relative;
+    position: relative;  /* Para poder mudar os icones adicionados nos inputs */
     width: 100%;
     height: 50px;
     margin: 30px 0px;
@@ -107,7 +107,7 @@ form .box span {
 }
 
 form input[type=submit] {
-    cursor: pointer;
+    cursor: pointer;  /* Mão do mouse ao passar por cima */
     background-color: white;
     border: none;
     width: 70%;
@@ -116,8 +116,8 @@ form input[type=submit] {
     border-radius: 40px;
     font-size: 1.2em;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto;   /* Centraliza no left */
+    margin-right: auto; /* Centraliza no right */
 }
 form input[type=submit]:hover {
     background-color: bisque;
@@ -145,3 +145,4 @@ form .registrar a:hover {
     transition: .2s;
     
 }
+

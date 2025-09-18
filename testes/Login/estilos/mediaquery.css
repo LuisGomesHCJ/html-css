@@ -10,6 +10,12 @@
     form input[type=submit] {
         margin-top: 70px;
     }
+
+    .lembrar-esqueci {
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
 }
 
 
@@ -24,5 +30,11 @@ main {
     
     form input[type=submit] {
         margin-top: 80px;
+    }
+
+    .lembrar-esqueci {
+        display: flex;
+        justify-content: space-evenly;
+    
     }
 }
