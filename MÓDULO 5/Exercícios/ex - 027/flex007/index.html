@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #conteiner {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        .item {
+            border: 1px solid black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        #caixa1 {
+            background-color: aqua;
+            order: 0;
+        }
+        #caixa2 {
+            background-color: red;
+            order: -2;
+        }
+        #caixa3 {
+            background-color: green;
+            order: 4;
+        }
+        #caixa4 {
+            background-color: blue;
+            order: 8;
+        }
+        #caixa5 {
+            background-color: pink;
+            order: 2;
+        }
+        #caixa6 {
+            background-color: blueviolet;
+            order: 0;
+        }
+        #caixa7 {
+            background-color: orange;
+            order: -4;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item" id="caixa1">A</div>
+        <div class="item" id="caixa2">B</div>
+        <div class="item" id="caixa3">C</div>
+        <div class="item" id="caixa4">D</div>
+        <div class="item" id="caixa5">E</div>
+        <div class="item" id="caixa6">F</div>
+        <div class="item" id="caixa7">G</div>
+    </div>
+</body>
+</html>
