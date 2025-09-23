@@ -39,7 +39,7 @@ section.sec-principal {
     padding: 20px;
     box-shadow: 0px 9px 10px #00000044;
 }
-section.sec-principal > h2,p {
+section.sec-principal  h2, p {
     padding: 20px 20px 5px 20px;
     text-align: justify;
     

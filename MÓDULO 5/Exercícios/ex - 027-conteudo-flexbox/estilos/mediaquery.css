@@ -21,7 +21,7 @@
 @media screen and (min-width:1000px) {
 
     header h1 {
-        text-align: startsection;
+        text-align: start;
     }
 
     section.sec-principal, section.sec-normal {
@@ -41,7 +41,14 @@
     }
 
     div.media-video iframe {
-        height: 430px;
-        width: 800px;
+        border-radius: 15px;
+        height: 400px;
+        width: 620px;
+        margin: 10px;
+    }
+
+    article.video-text {
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
