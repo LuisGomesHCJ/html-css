@@ -26,7 +26,7 @@ header {
     
 }
 header h1 {
-    flex: 0 0 200px; /* Meu h1 não vai esticar e nem se espremer de tamanho */
+    flex: 0 0 200px; /* Meu h1 não vai esticar e nem se espremer de largura */
     
 }
 
