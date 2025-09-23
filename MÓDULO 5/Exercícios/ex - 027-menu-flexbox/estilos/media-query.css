@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@media screen and (min-width:450px) and (max-width:760px) {  /* CELULAR */
+    
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        flex: 0 0 50px;
+    }
+
+    header nav {
+        flex-flow: column nowrap;
+        width: 90%;
+    }
+    header nav a {
+        margin: 1px;
+        
+    }
+    main {
+        max-width: 450px;
+    }
+}
+
+@media  screen and (min-width:760px) and (max-width:992px) { /* TABLET */
+    header {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        flex: 0 0 50px;
+    }
+
+    header nav {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        max-width: 750px;
+    }
+}
