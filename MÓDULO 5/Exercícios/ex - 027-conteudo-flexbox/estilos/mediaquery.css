@@ -5,11 +5,11 @@
         text-align: center;
     }
 
-    .sec-principal, .sec-normal {
+    section.sec-principal, section.sec-normal {
         max-width: 680px;
     }
 
-    .media-video iframe {
+    div.media-video iframe {
         height: 350px;
         width: 600px;
     }
@@ -21,26 +21,26 @@
 @media screen and (min-width:1000px) {
 
     header h1 {
-        text-align: start;
+        text-align: startsection;
     }
 
-    .sec-principal, .sec-normal {
+    section.sec-principal, section.sec-normal {
         max-width: 1200px;
     }
 
-    .img-text {
+    article.img-text {
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
-    .media-img img {
+    div.media-img img {
         height: 400px;
         width: 230px;
         margin: 20px 70px;
     }
 
-    .media-video iframe {
+    div.media-video iframe {
         height: 430px;
         width: 800px;
     }

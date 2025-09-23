@@ -31,7 +31,7 @@ header h1 {
 
 /*--------------------------------SECTION PRINCIPAL----------------------------------*/
 
-.sec-principal {
+section.sec-principal {
     border-radius: 15px;
     max-width: 450px;
     margin: auto;
@@ -39,26 +39,26 @@ header h1 {
     padding: 20px;
     box-shadow: 0px 9px 10px #00000044;
 }
-.sec-principal > h2,p {
+section.sec-principal > h2,p {
     padding: 20px 20px 5px 20px;
     text-align: justify;
     
 }
 
-.img-text {
+article.img-text {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
 
-.video-text {
+article.video-text {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-.media-video iframe {
+div.media-video iframe {
     margin: 20px 0px;
 }
 /*--------------------------------------------------------------------------------*/
@@ -68,7 +68,7 @@ header h1 {
 
 /*--------------------------------SECTION NORMAL----------------------------------*/
 
-.sec-normal {
+section.sec-normal {
     margin: 10px auto;
     border-radius: 15px;
     max-width: 450px;
@@ -76,11 +76,11 @@ header h1 {
     padding: 20px;
     box-shadow: 0px 9px 10px #00000044;
 }
-.sec-normal h2,p {
+section.sec-normal h2,p {
     text-align: justify;
     padding: 20px 20px 5px 20px;
 }
 
-header, .sec-normal {
+header, section.sec-normal {
     padding: 20px;
 }

@@ -18,3 +18,4 @@ Exercicios
 <a href="testes/Login/index.html">Login 2.0 aprendendo no Youtube</a>
 
 <a href= "MÓDULO 5/Exercícios/ex - 027-menu-flexbox/index.html">exercício 027 menu com flexbox</a>
+<a href= "MÓDULO 5/Exercícios/ex - 027-menu-flexbox/index.html">exercício 027 site dinâmico</a>
