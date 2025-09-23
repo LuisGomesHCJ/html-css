@@ -59,6 +59,7 @@ article.video-text {
     align-items: center;
 }
 div.media-video iframe {
+    width: 400px;
     margin: 20px 0px;
 }
 /*--------------------------------------------------------------------------------*/
