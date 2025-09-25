@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #conteiner {
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            align-items: center;
+            align-content: center;
+            padding: 10px;
+            gap: 10px;
+            height: 100vh;
+        }
+        .item1 {
+            height: 200px;
+            background-color: pink;
+            flex: 1 1 200px;
+
+        }
+        .item2 {
+            height: 200px;
+            background-color: lightblue;
+            flex:1 0 150px;
+        }
+        .item3 {
+            height: 200px;
+            background-color: orange;
+            flex:1 1 500px;
+        }
+        .item4 {
+            height: 200px;
+            background-color: yellow;
+            flex:1 0 200px;
+        }
+        .item5 {
+            height: 200px;
+            background-color: purple;
+            flex:0 1 200px;
+        }
+        .item6 {
+            height: 200px;
+            background-color: brown;
+            flex:1 0 200px;
+        }
+        .item7 {
+            height: 200px;
+            background-color: red;
+            flex:1 0 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+        <div class="item6">F</div>
+        <div class="item7">G</div>
+    </div>
+</body>
+</html>
