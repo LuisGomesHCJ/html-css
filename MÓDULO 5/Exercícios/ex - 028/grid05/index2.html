@@ -51,7 +51,6 @@
 
 
         main {
-            padding-left: 15px;
             display: grid;
             grid-template: repeat(3, 300px) / repeat(4, 1fr);
             background-color: teal;
@@ -62,11 +61,11 @@
             grid-column: 1 / -2;
         }
         article {
-            background-color: white;
+            background-color: pink;
         }
         .anuncio {
             background-color: orange;
-            grid-row: 1 / -1;
+            grid-row: span 3; /* ocupa 3 linhas */
             grid-column: 4 / -1;
             
         }
